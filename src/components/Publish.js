@@ -14,6 +14,7 @@ function Publish () {
          <div className='publish-textdiv'>
             <h3>期刊論文</h3>
          </div>
+         <h2 className="page-name">WIP......<br/><br/><br/></h2>
          <div className='backhome'>
             <NavLink to='/'><img src="https://photos.smugmug.com/photos/i-fkWLwcT/0/16635ef1/O/i-fkWLwcT.gif" alt="home" className='backhomeimg'/></NavLink>
          </div>
