@@ -1,0 +1,139 @@
+.page-name{
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(43, 35, 155);
+}
+
+.about-logo{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.rainbowgif{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.textdiv, .lesson-textdiv, .publish-textdiv{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.lesson-textdiv p{
+    text-indent: 2em;
+}
+
+.publish-textdiv h3{
+    color: #993333;
+}
+
+.backhome{
+    text-align: center;
+}
+
+.about-table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-table td{
+    text-align: center;
+}
+
+.about-table img{
+    padding-bottom: 5px;
+}
+
+.host-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.host-p{
+    margin-left: 1%;
+}
+
+.member-table td{
+    text-align: left;
+    text-indent: 2em;
+}
+
+.research-table td{
+    color: #993333;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 2em;
+    white-space: nowrap;
+}
+
+
+@media (min-width:768px){
+    .about-logo{
+        max-width: 50%;
+    }
+
+    .rainbowgif{
+        width: 40%;
+        height: 10px;
+    }
+
+    .about-table{
+        width: 95%;
+    }
+
+    .about-img{
+        max-height: 450px;
+        max-width: 600px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .host-img{
+        max-width: 100%;
+    }
+
+    .host-p{
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .host-h{
+        text-align: center;
+    }
+
+    .research-table{
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+    }
+    
+}
+
+@media (max-width:767px){
+    .about-logo{
+        max-width: 90%;
+    }
+
+    .rainbowgif{
+        width: 70%;
+        height: 5px;
+    }
+
+    .about-table{
+        width: 95%;
+    }
+
+    .about-img{
+        max-width: 92%;
+        margin-left: 2%;
+        margin-left: 2%;
+    }
+
+    .host-img{
+        max-width: 92%;
+    }
+}

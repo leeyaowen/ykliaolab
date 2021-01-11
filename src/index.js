@@ -1,12 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Home';
 import reportWebVitals from './reportWebVitals';
+import Routerapp from './Routerapp';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Routerapp/>
   </React.StrictMode>,
   document.getElementById('root')
 );
