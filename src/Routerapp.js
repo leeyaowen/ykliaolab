@@ -14,7 +14,7 @@ import Home from './Home';
 function Routerapp() {
     return(
         <div className='router'>
-            <Router basename='/ykliaolab'>
+            <Router>
                 <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/About' component={About} />
