@@ -1,2 +1,2 @@
-# ykliaolab-clino site  
+# ykliaolab-clone site  
 https://leeyaowen.github.io/ykliaolab/
