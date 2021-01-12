@@ -1,11 +1,3 @@
-import React from 'react';
-import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
-import ReactMarkdown from 'react-markdown';
-import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
-import './page.css';
-
-const publishMD = `
 ### **期刊論文**
   
 何雅齡、**廖宇賡***，2020。 著生杜鵑之微體繁殖。台灣林業科學35(2):161-72。  
@@ -126,26 +118,4 @@ Lee S. H*., **Y. K. Liao** and M. H. Lee ( 2005) Studies on growth characteristi
   
 ### **專業書籍**
 **廖宇賡**，2010。組織培養技術與運用、生物技術應用。74-77頁。李明仁(編輯)  育林實務手冊。行政院農業委員會林務局 ，臺北。349頁。  
-劉正川、林喻東、**廖宇賡**、何坤益，2007。森林的功能與重要性。153-164頁。廖宇賡 等(編輯) 農業概論。國立嘉義大學出版組，嘉義。644頁。   
-`
-
-function Publish () {
-    return (
-       <div>
-          <Helmet>
-            <title>發表著作</title>
-         </Helmet>
-         <ScrollUpButton />
-         <h1 className="page-name">發表著作</h1>
-         <img src='https://photos.smugmug.com/photos/i-TF8hXxJ/0/2030a43c/O/i-TF8hXxJ.gif' alt='rainbowgif' className='rainbowgif'/><br/>
-         <div className='publish-textdiv'>
-            <ReactMarkdown source={publishMD} />
-         </div>
-         <div className='backhome'>
-            <NavLink to='/'><img src="https://photos.smugmug.com/photos/i-fkWLwcT/0/16635ef1/O/i-fkWLwcT.gif" alt="home" className='backhomeimg'/></NavLink>
-         </div>
-       </div>
-    );
-}
- 
-export default Publish;
+劉正川、林喻東、**廖宇賡**、何坤益，2007。森林的功能與重要性。153-164頁。廖宇賡 等(編輯) 農業概論。國立嘉義大學出版組，嘉義。644頁。  

@@ -17,7 +17,7 @@
     display: block;
 }
 
-.textdiv, .lesson-textdiv, .publish-textdiv{
+.textdiv, .lesson-textdiv{
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -26,8 +26,9 @@
     text-indent: 2em;
 }
 
-.publish-textdiv h3{
+.publish-textdiv {
     color: #993333;
+    line-height: 1.5;
 }
 
 .backhome{
@@ -68,6 +69,11 @@
     text-align: left;
     text-indent: 2em;
     white-space: nowrap;
+}
+
+.publish-textdiv{
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .contact-email{
@@ -123,8 +129,7 @@
     }
     .contact-img{
         max-width: 350px;
-    }
-    
+    }    
 }
 
 @media (max-width:767px){
