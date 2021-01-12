@@ -11,3 +11,4 @@
 - npm i react-helmet
 - npm i react-markdown
 - npm install remark-gfm
+- npm i react-csv-to-table

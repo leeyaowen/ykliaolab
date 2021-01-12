@@ -1,12 +1,3 @@
-import React from 'react';
-import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
-import ReactMarkdown from 'react-markdown';
-import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
-import gfm from 'remark-gfm'
-import './page.css';
-
-const studentMD =`
 ### 碩士班論文指導
   
 |                |        |                                                                        |
@@ -123,25 +114,3 @@ const studentMD =`
 | 九十五年六月 | 馮毓葳 | 利用高效液相層析儀分析抗壞血酸於溶液下降解之研究                                         |
 | 九十五年六月 | 江孟縈 | 以接種農桿根群菌協助濕地松、琉球松集束葉扦插及青剛櫟、長葉暗羅木質插穗發根之試驗         |
 | 九十五年六月 | 梁雅雯 | 不同光質對筆筒樹配子體型態發育之影響                                                     |
-`
-
-function Student_porject () {
-    return (
-       <div className='contact-div'>
-          <Helmet>
-            <title>歷屆指導學生研究專題</title>
-         </Helmet>
-         <ScrollUpButton />
-         <h1 className="page-name">歷屆指導學生研究專題</h1>
-         <img src='https://photos.smugmug.com/photos/i-TF8hXxJ/0/2030a43c/O/i-TF8hXxJ.gif' alt='rainbowgif' className='rainbowgif'/><br/>
-         <div className='student-textdiv'>
-            <ReactMarkdown plugins={[gfm]} source={studentMD} allowDangerousHtml={true} />
-         </div>
-         <div className='backhome'>
-            <NavLink to='/'><img src="https://photos.smugmug.com/photos/i-fkWLwcT/0/16635ef1/O/i-fkWLwcT.gif" alt="home" className='backhomeimg'/></NavLink>
-         </div>
-       </div>
-    );
-}
- 
-export default Student_porject;

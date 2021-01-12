@@ -29,6 +29,8 @@
 .publish-textdiv {
     color: #993333;
     line-height: 1.5;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .backhome{
@@ -71,9 +73,24 @@
     white-space: nowrap;
 }
 
-.publish-textdiv{
-    margin-left: 2%;
-    margin-right: 2%;
+.student-textdiv{
+    color: #333399;
+    white-space: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+.student-textdiv table th{
+    min-width: 150px;
+}
+
+.student-textdiv table tr:hover{
+    background-color: #8dc17c;
+}
+
+.student-textdiv h3{
+    padding-top: 8px;
 }
 
 .contact-email{
@@ -129,7 +146,11 @@
     }
     .contact-img{
         max-width: 350px;
-    }    
+    }
+
+    .student-textdiv table td{
+        padding-bottom: 3px;
+    }
 }
 
 @media (max-width:767px){
@@ -162,5 +183,17 @@
 
     .contact-img{
         max-width: 90%;
+    }
+
+    .student-textdiv{
+        color: #333399;
+        white-space: normal;
+    }
+
+    .student-textdiv table th{
+        min-width: 20px;
+    }
+    .student-textdiv table td{
+        padding-bottom: 10px;
     }
 }

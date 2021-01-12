@@ -1,11 +1,3 @@
-import React from 'react';
-import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
-import { Table } from 'react-bootstrap';
-import { CsvToHtmlTable } from 'react-csv-to-table';
-import './page.css';
-
-const researchTB = `
 2020/01-2020/12,新竹縣政府,109年度新竹地區槲櫟 原生地復育與族群監測、生育地管理維護及區外栽植植株監測保育計畫(共同主持)
 2020/09-2021/08,嘉義林區管理處,阿里山國家森林遊樂區櫻花組織培養繁殖之研究(Ⅱ)
 2020/01-2020/03,屏東林區管理處,因應氣候變遷對南仁山地區特、稀有樹種唐杜鵑、台灣石櫟及希蘭灰木之保育繁殖計畫(Ⅳ)
@@ -58,32 +50,3 @@ const researchTB = `
 1997/07-1998/06,農委會,台灣雲杉體胚成熟與萌芽方法之改進
 1996/07-1997/06,農委會,台灣雲杉之體胚繁殖(Ⅱ)
 1995/07-1996/06,農委會,台灣雲杉之體胚繁殖
-`
-
-function Research () {
-    return (
-       <div>
-          <Helmet>
-            <title>研究專題計畫</title>
-         </Helmet>
-         <h1 className="page-name">研究專題計畫</h1>
-         <img src='https://photos.smugmug.com/photos/i-TF8hXxJ/0/2030a43c/O/i-TF8hXxJ.gif' alt='rainbowgif' className='rainbowgif'/><br/>
-         <div className='research-table-div'>
-            <Table responsive='md' className='research-table' size='sm' borderless>
-               <tbody>
-                  <tr>
-                     <td>
-                        <CsvToHtmlTable data={researchTB} csvDelimiter=',' hasHeader={false} tableClassName="table table-hover" />
-                     </td>
-                  </tr>
-               </tbody>
-            </Table>
-         </div>
-         <div className='backhome'>
-            <NavLink to='/'><img src="https://photos.smugmug.com/photos/i-fkWLwcT/0/16635ef1/O/i-fkWLwcT.gif" alt="home" className='backhomeimg'/></NavLink>
-         </div>
-       </div>
-    );
-}
- 
-export default Research;
