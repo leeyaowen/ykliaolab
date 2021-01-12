@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Host from "./components/Host";
@@ -14,7 +14,7 @@ import Home from './Home';
 function Routerapp() {
     return(
         <div className='router'>
-            <Router>
+            <Router basename='/ykliaolab'>
                 <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/About' component={About} />

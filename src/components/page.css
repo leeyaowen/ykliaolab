@@ -81,8 +81,12 @@
     width: 90%;
 }
 
-.student-textdiv table th{
-    min-width: 150px;
+.student-textdiv table th:first-of-type{
+    width: 10em;
+}
+
+.student-textdiv table th:nth-of-type(2){
+    width: 5em;
 }
 
 .student-textdiv table tr:hover{
@@ -148,6 +152,10 @@
         max-width: 350px;
     }
 
+    .student-textdiv table {
+        width: 100%;
+    }
+
     .student-textdiv table td{
         padding-bottom: 3px;
     }
@@ -190,9 +198,14 @@
         white-space: normal;
     }
 
-    .student-textdiv table th{
-        min-width: 20px;
+    .student-textdiv table th:first-of-type{
+        width: 4em;
     }
+    
+    .student-textdiv table th:nth-of-type(2){
+        width: 4em;
+    }
+
     .student-textdiv table td{
         padding-bottom: 10px;
     }
